@@ -15,6 +15,8 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
   gem "rubocop-rails-omakase", require: false
+  gem "rspec-rails"
+  gem "shoulda-matchers", "~> 5.0"
 end
 
 group :development do
