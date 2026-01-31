@@ -1,0 +1,16 @@
+pt-BR:
+  errors:
+    messages:
+      blank: "não pode ficar em branco"
+      not_a_number: "deve ser um número"
+
+  activerecord:
+    models:
+      product: "Produto"
+
+    attributes:
+      product:
+        name: "Nome"
+        price: "Preço"
+        description: "Descrição"
+        quantity: "Quantidade"
