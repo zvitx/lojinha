@@ -11,11 +11,7 @@ development:
 
 test:
   <<: *default
-  adapter: postgresql
   database: lojinha_test
-  username: postgres
-  password: postgres
-  host: 127.0.0.1
 
 production:
   <<: *default
