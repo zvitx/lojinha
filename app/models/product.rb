@@ -14,7 +14,7 @@
 class Product < ApplicationRecord
 
     validates :name, :description, presence: true
-    validates :price, :quantity, :minimum_stock, presence: true, numericality: true
+    validates :price, :quantity, presence: true, numericality: true
 
     def low_stock?
         return false if minimum_stock.nil?
