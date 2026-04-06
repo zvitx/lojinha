@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
       redirect_to @product, notice: "Produto criado com sucesso!"
 
     else
-      render :new, status: :unprocessable_entity, notice: "Nao foi possivel criar o produto"
+      render :new, status: :unprocessable_entity, notice: "Não foi possivel criar o produto"
     end
   end
 
@@ -29,7 +29,7 @@ class ProductsController < ApplicationController
     redirect_to products_path, notice: "Produto atualizado com sucesso"
 
     else
-      render :edit, status: :unprocessable_entity, notice: "Nao foi possivel atualizar o produto"
+      render :edit, status: :unprocessable_entity, notice: "Não foi possivel atualizar o produto"
     end
   end
 
