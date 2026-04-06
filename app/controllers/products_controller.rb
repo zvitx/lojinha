@@ -7,6 +7,8 @@ class ProductsController < ApplicationController
 
   def show; end
 
+  def edit; end
+
   def new
     @product = Product.new
   end
@@ -27,7 +29,7 @@ class ProductsController < ApplicationController
     redirect_to products_path, notice: "Produto atualizado com sucesso"
 
     else
-      render :edit, status: unprocessable_entity, notice: "Nao foi possivel atualizar o produto"
+      render :edit, status: :unprocessable_entity, notice: "Nao foi possivel atualizar o produto"
     end
   end
 
