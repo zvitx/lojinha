@@ -1,22 +1,27 @@
 <div id="<%= dom_id product %>">
   <p>
-    <strong>Nome:</strong>
+    <strong><%=t('activerecord.attributes.product.name')%>:</strong>
     <%= product.name %>
   </p>
 
   <p>
-    <strong>Preço:</strong>
+    <strong><%=t('activerecord.attributes.product.price')%>:</strong>
     <%= product.price %>
   </p>
 
   <p>
-    <strong>Descrição:</strong>
+    <strong><%=t('activerecord.attributes.product.description')%>:</strong>
     <%= product.description %>
   </p>
 
   <p>
-    <strong>Quantidade:</strong>
+    <strong><%=t('activerecord.attributes.product.quantity')%>:</strong>
     <%= product.quantity %>
+  </p>
+
+  <p>
+    <strong> <%=t('activerecord.attributes.product.minimum_stock')%>:</strong>
+    <%= product.minimum_stock %>
   </p>
 
 </div>
